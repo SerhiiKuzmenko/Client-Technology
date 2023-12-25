@@ -46,7 +46,7 @@ body{
 }
 
 header{
-    min-width: 540px;
+    min-width: 330px;
     width: 100%;
     background-color: #C0E1F2;
 }
@@ -395,22 +395,25 @@ input[type=reset]:hover{
     }
 
     ul{
-        padding-inline-start: 15px;
+        padding-inline-start: 0px;
     }
 
 
     .project{
-        display: block;
-        width: 500px;
+        display: flex;
+        /* min-width: 330px; */
+        flex-direction: column;
+        align-items: center;    
     }
 
     footer{
-        width: 500px;
+        min-width: 330px;
     }
 
     .project img{
-        float: left;
-        margin-right: 15px;
+        width: auto;
+        float: none;
+        margin-right: 0;
     }
     
     .header_formating{
@@ -422,7 +425,7 @@ input[type=reset]:hover{
         display: block;
         margin-bottom: 15px;
         text-align: center;
-        width: 200px;
+        width: 150px;
     }
 
     .menu ul li a:not(.adaptive_display){
@@ -448,10 +451,27 @@ input[type=reset]:hover{
     .main-reg{
         display: flex;
         justify-content: center;
-        width: 540px;
+        min-width: 330px;
     }
 
+    .logo{
+        display: block;
+        width: auto;
+    }
     
+   .login{
+    width: auto;
+   }
+
+    h1{
+        margin-top: 0;
+        padding-left: 10px;
+    }
+
+    p{
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     input[type=text],
     input[type=password],
@@ -463,5 +483,27 @@ input[type=reset]:hover{
 
     .main-form .form-content{
         margin-left: 0;
+    }
+
+
+
+    .radio_formating{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=radio] + label{
+        width: 180px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .br{
+        display: none;
+    }
+
+    textarea[name=qa]{
+        width: 100%;
     }
 }

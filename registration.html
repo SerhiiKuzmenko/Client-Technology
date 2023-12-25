@@ -14,17 +14,20 @@
 <body>
   <div class="wrapper">
     <header>
-        <div class="logo">
-          <a href="index.html"><img src="img/OIG.jpg" width="150" alt="logo"></a>
-          <a href="index.html"><h1>SoftComp</h1></a>
-        </div>
-        
-        <div class="menu" id="menu">
-          <ul>
-            <li><a href="index.html">To Home Page</a></li>
-            <li><a class="enable" href="registration.html">Registration</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
+        <div class="header_formating">
+            <div class="logo">
+              <a href="index.html"><img src="img/OIG.jpg" width="150" alt="logo"></a>
+              <a href="index.html"><h1>SoftComp</h1></a>
+            </div>
+          
+          
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="index.html">To Home Page</a></li>
+              <li><a class="enable" href="registration.html">Registration</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
         </div>
       </header>
       
@@ -73,14 +76,14 @@
                 <input type="tel" name="phone" id="phone" required placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
                 <label for="date">Date of Birth:</label>
                 <input type="date" name="date" id="date"><br><br>
-                <div>
-                  <label class="full-text">Technology stack:</label><br><br>
+                <div class="radio_formating">
+                  <label class="full-text">Technology stack:</label><br class="br"><br class="br">
                   <input type="radio" id="MERN" name="stackTechnology">
                   <label for="MERN">MERN Stack</label>
                   <input type="radio" id="MEAN" name="stackTechnology">
                   <label for="MEAN">MEAN Stack</label>
                   <input type="radio" id="LAMP" name="stackTechnology">
-                  <label for="LAMP">LAMP Stack</label><br><br>
+                  <label for="LAMP">LAMP Stack</label><br class="br"><br class="br">
                 </div>
                 <label for="qa" class="full-text">Ask your questions (optional):</label><br>
                 <textarea name="qa" id="qa" cols="30" rows="5"></textarea><br>
