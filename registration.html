@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SoftComp is the largest IT company in the world</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SoftComp is a large company for the development of software of various types">
+  <link rel="icon" href="img/icon/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+        <div class="logo">
+          <a href="index.html"><img src="img/OIG.jpg" width="150" alt="logo"></a>
+          <a href="index.html"><h1>SoftComp</h1></a>
+        </div>
+        
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="index.html">To Home Page</a></li>
+            <li><a class="enable" href="registration.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </header>
+      
+      <div class="main-reg">
+        <img class="wave" src="img/wave.svg" width="800">
+        <section>
+          <h2>Registration</h2>
+            <form action="#" method="POST" class="reg-form">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br><br>
+                <label for="secondName">Second Name:</label>
+                <input type="text" id="secondName" name="secondName" required><br><br>
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required><br><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" required><br><br>
+                <label for="regions">Region</label>
+                <select name="regions" id="regions">
+                    <option value="" selected disabled>Select a region</option>
+                    <option value="Sumy">Sumy region</option>
+                    <option value="Cherkasy">Cherkasy region</option>
+                    <option value="Chernihiv">Chernihiv region</option>
+                    <option value="Chernivtsi">Chernivtsi region</option>
+                    <option value="Dnipropetrovsk">Dnipropetrovsk region</option>
+                    <option value="Donetsk">Donetsk region</option>
+                    <option value="Ivano-Frankivsk">Ivano-Frankivsk region</option>
+                    <option value="Kharkiv">Kharkiv region</option>
+                    <option value="Kherson">Kherson region</option>
+                    <option value="Khmelnytskyi">Khmelnytskyi region</option>
+                    <option value="Kiev">Kiev region</option>
+                    <option value="Kirovohrad">Kirovohrad region</option>
+                    <option value="Luhansk">Luhansk region</option>
+                    <option value="Lviv">Lviv region</option>
+                    <option value="Mykolaiv">Mykolaiv region</option>
+                    <option value="Odessa">Odessa region</option>
+                    <option value="Poltava">Poltava region</option>
+                    <option value="Rivne">Rivne region</option>
+                    <option value="Ternopil">Ternopil region</option>
+                    <option value="Vinnytsia">Vinnytsia region</option>
+                    <option value="Volyn">Volyn region</option>
+                    <option value="Zakarpattia">Zakarpattia region</option>
+                    <option value="Zaporizhia">Zaporizhia region</option>
+                    <option value="Zhytomyr">Zhytomyr region</option>
+                </select><br><br>
+                <label for="phone">Telephone number:</label>
+                <input type="tel" name="phone" id="phone" required placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                <label for="date">Date of Birth:</label>
+                <input type="date" name="date" id="date"><br><br>
+                <div>
+                  <label class="full-text">Technology stack:</label><br><br>
+                  <input type="radio" id="MERN" name="stackTechnology">
+                  <label for="MERN">MERN Stack</label>
+                  <input type="radio" id="MEAN" name="stackTechnology">
+                  <label for="MEAN">MEAN Stack</label>
+                  <input type="radio" id="LAMP" name="stackTechnology">
+                  <label for="LAMP">LAMP Stack</label><br><br>
+                </div>
+                <label for="qa" class="full-text">Ask your questions (optional):</label><br>
+                <textarea name="qa" id="qa" cols="30" rows="5"></textarea><br>
+                <input type="submit" name="btnReg" id="btnReg" value="Submit">
+                <input type="reset" name="btnReset" id="btnReset" value="Reset">
+            </form>
+        </section>
+        <img class="wave" src="img/wave.svg" width="800">
+      </div>
+      <footer>
+        <div class="links">
+          <ul>
+            <li class="link">
+              <a href="https://twitter.com/x"><img src="img/icon/th.png" alt="X"></a>
+              <a href="https://twitter.com/x">X(Twitter)</a>
+            </li>
+            <li class="link">
+              <a href="https://www.facebook.com/"><img src="img/icon/thf.png" width="20" alt="facebook"></a>
+              <a href="https://www.facebook.com/">Facebook</a>
+            </li>   
+          </ul>
+        </div>
+        <div class="copy">
+          &copy; 2023 SoftComp. All rights reserved.
+        </div>
+      </footer>
+  </div>
+</body>
+</html>

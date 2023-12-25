@@ -1,0 +1,467 @@
+html{
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Bebas Neue", "Oswald";
+}
+
+
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 100%;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    flex: 1 1 auto;
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+}
+
+.main-reg{
+    background-color: white;
+    flex: 1 1 auto;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    min-width: 540px;
+    width: 100%;
+    background-color: #C0E1F2;
+}
+
+h1{
+    color: #237CB5;
+    text-decoration:underline;
+    font-size: 46px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #237CB5;
+}
+
+.menu a.enable{
+    background-color: #23b5a2;
+    text-decoration: underline;
+}
+
+.menu a:hover{
+    color: #237CB5;
+    background-color: #94DBE1;
+    transition: background-color 1s ease;
+}
+
+section{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h2{
+    padding-left: 20px;
+}
+
+p {
+    text-indent: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+.project{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_info{
+    margin-left: 20px;
+}
+/* змінити */
+.project img{
+    width: 200px;
+    height: 150px;
+}
+
+.persone img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+/* змінити */
+.team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persone{
+    text-align: center;
+}
+/* змінити */
+.main-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+}
+/* змінити */
+.main-form .form-content{
+    margin-bottom: 10px;
+    height: 35px;
+    border-radius: 2px;
+    padding-left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.main-form .form-content[type="submit"] {
+    border: none;
+    transition: background-color 0.4s ease;
+    background-color: orange;
+}
+
+.form-content[type="submit"]:hover {
+    transform: scale(0.98);
+    background-color: darkgoldenrod;
+}
+
+textarea.form-content{
+    min-height: 35px;
+    resize: vertical;
+}
+
+
+.links{
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+}
+
+.link img{
+    margin-right: 5px;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(4, 176, 255);
+}
+
+.link a:hover{
+    text-decoration: underline;
+    color: rgb(4, 58, 255);
+}
+
+.copy{
+    text-align: center;
+}
+
+.main-reg{
+    display: flex;
+    justify-content: space-between;
+}
+/* змінити */
+.login{
+    width: 392px;
+}
+/* змінити */
+.reg-form{
+    background-color: #C0E1F2;
+    border: solid #237CB5 5px;
+    padding: 25px 25px;
+}
+
+
+label:not(.full-text){
+    display: inline-block;
+    width: 100px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #c9e9ed inset; 
+    -webkit-text-fill-color: #000000; 
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=date]{
+    border-radius: 3px;
+    width: 41%;
+    height: 30px;
+    padding-left: 10px;
+    background-color: #c9e9ed;
+}
+
+select{
+    width: 45%;
+    border: solid black 2px;
+    padding-left: 8px;
+    height: 35px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 3px;
+    background-color: #c9e9ed;
+
+}
+
+/* змінити */
+textarea[name=qa]{
+    width: 385px;
+    min-height: 50px;
+    resize: vertical;
+    background-color: #c9e9ed;
+    margin: 7px 0;
+}
+/* змінити */
+
+
+
+input[type=radio],
+input[type=checkbox] {
+    display: none;
+}
+
+
+input[type=radio] + label,
+input[type=checkbox] + label {
+    position: relative;
+    padding-left: 26px; 
+    cursor: pointer;
+    display: inline-block;
+    line-height: 25px; 
+}
+
+input[type=radio] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #237CB5; 
+    border-radius: 50%; 
+    background-color: #C0E1F2; 
+}
+
+input[type=checkbox] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #237CB5;
+    background-color: #C0E1F2;
+}
+
+input[type=radio]:checked + label:before,
+input[type=checkbox]:checked + label:before {
+    background-color: #237CB5; 
+    border-color: #237CB5;
+}
+
+
+
+input[type=submit],
+input[type=reset]{
+    width: 48%;
+    height: 45px;
+    background-color: #237CB5;
+    border-radius: 3px;
+    color: white;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover{
+    transition: 2.4s ease;
+    background-color: rgb(9, 223, 223);
+}
+
+.center-btn{
+    text-align: center;
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    ul{
+        padding-inline-start: 10px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+   
+    body{
+       font-size: 1.2em; 
+    }
+
+    ul li > a[href="#whatWeDo"],
+    ul li > a[href="#ourExpirience"]{
+        display: none;
+    }
+
+    .wave{
+        display: none;
+        
+    }
+
+    ul{
+        padding-inline-start: 0px;
+    }
+
+    .menu ul li{
+        margin-left: 5px;
+    }
+
+    .team{
+        display: block;
+        
+    }
+    .persone p{
+        text-align: left;
+    }
+
+    .project{
+        display: block;
+    }
+
+    .project img{
+        float: left;
+        margin-right: 15px;
+    }
+    .links{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body{
+        font-size: 1.4em;
+    }
+
+    a[href="#whatWeDo"],
+    a[href="#ourExpirience"]{
+        display: none;
+    }
+
+    .wave{
+        display: none;
+        
+    }
+
+    ul{
+        padding-inline-start: 15px;
+    }
+
+
+    .project{
+        display: block;
+        width: 500px;
+    }
+
+    footer{
+        width: 500px;
+    }
+
+    .project img{
+        float: left;
+        margin-right: 15px;
+    }
+    
+    .header_formating{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu ul li{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 200px;
+    }
+
+    .menu ul li a:not(.adaptive_display){
+        display: block;
+    }
+
+    .menu{
+        padding-right: 15px;
+    }
+
+    .team{
+        display: block;
+        
+    }
+    .persone p{
+        text-align: left;
+    }
+
+    .links{
+        margin-left: 0;
+    }
+
+    .main-reg{
+        display: flex;
+        justify-content: center;
+        width: 540px;
+    }
+
+    
+
+    input[type=text],
+    input[type=password],
+    input[type=tel],
+    input[type=date],
+    select{
+    margin-left: 10px;
+    }
+
+    .main-form .form-content{
+        margin-left: 0;
+    }
+}
