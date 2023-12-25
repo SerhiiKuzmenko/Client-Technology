@@ -401,9 +401,12 @@ input[type=reset]:hover{
 
     .project{
         display: flex;
-        /* min-width: 330px; */
         flex-direction: column;
         align-items: center;    
+    }
+
+    .project_info{
+        margin-left: 0;
     }
 
     footer{
@@ -485,7 +488,11 @@ input[type=reset]:hover{
         margin-left: 0;
     }
 
-
+    .main-form{
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: center;
+    }
 
     .radio_formating{
         display: flex;
@@ -506,4 +513,12 @@ input[type=reset]:hover{
     textarea[name=qa]{
         width: 100%;
     }
+
+    
+
+    .what_we_do p,
+    .our_expirience p{
+        padding-left: 5px;
+    }
+
 }
