@@ -140,13 +140,15 @@ ul{
     flex-direction: column;
     margin: 0 auto;
     max-width: 400px;
+    width: 90%;
+    align-items: center;
 }
 /* змінити */
 .main-form .form-content{
     margin-bottom: 10px;
     height: 35px;
     border-radius: 2px;
-    padding-left: 0;
+    padding-left: 10px;
     width: 100%;
     background-color: white;
 }
@@ -445,6 +447,7 @@ input[type=reset]:hover{
     }
     .persone p{
         text-align: left;
+        margin-left: 5px;
     }
 
     .links{
@@ -521,4 +524,10 @@ input[type=reset]:hover{
         padding-left: 5px;
     }
 
+}
+
+@media (max-width: 299px) {
+    body{
+        overflow-x: hidden;
+    }
 }
