@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="SoftComp is a large company for the development of software of various types">
   <link rel="icon" href="img/icon/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +28,101 @@
             <li><a translate="no" href="#projects">Projects</a></li>
             <li><a translate="no" href="#ourTeam">Our team</a></li>
             <li><a translate="no" href="#contactUs">Contact Us</a></li>
-            <li><a translate="no" href="registration.html">Registration</a></li>
-            <li><a translate="no" href="login.html">Login</a></li>
+            <li><a translate="no" id="registration-form" class="fa fa-user-plus user-management"></a></li>
+            <li><a translate="no" id="login-form" class="fa fa-user-circle user-management" style="margin-right: 7px;"></a></li>
           </ul>
         </div>
       </div>
     </header>
+
+    <div id="modal" class="modal-form">
+      <div class="modal-reg">
+        <span class="exit fa fa-times-circle"></span>
+        <div class="main-reg">
+          <section class="reg-modal-section">
+            <h2 translate="no">Registration</h2>
+              <form action="#" method="POST" class="reg-form">
+                  <label translate="no" for="firstName">First Name:</label>
+                  <input type="text" id="firstName" name="firstName" required><br><br>
+                  <label translate="no" for="secondName">Second Name:</label>
+                  <input type="text" id="secondName" name="secondName" required><br><br>
+                  <label translate="no" for="login">Login:</label>
+                  <input type="text" id="login" name="login" required><br><br>
+                  <label translate="no" for="pass">Password:</label>
+                  <input type="password" id="pass" name="pass" required><br><br>
+                  <label translate="no" for="regions">Region</label>
+                  <select name="regions" id="regions">
+                      <option value="" selected disabled>Select a region</option>
+                      <option value="Sumy">Sumy region</option>
+                      <option value="Cherkasy">Cherkasy region</option>
+                      <option value="Chernihiv">Chernihiv region</option>
+                      <option value="Chernivtsi">Chernivtsi region</option>
+                      <option value="Dnipropetrovsk">Dnipropetrovsk region</option>
+                      <option value="Donetsk">Donetsk region</option>
+                      <option value="Ivano-Frankivsk">Ivano-Frankivsk region</option>
+                      <option value="Kharkiv">Kharkiv region</option>
+                      <option value="Kherson">Kherson region</option>
+                      <option value="Khmelnytskyi">Khmelnytskyi region</option>
+                      <option value="Kiev">Kiev region</option>
+                      <option value="Kirovohrad">Kirovohrad region</option>
+                      <option value="Luhansk">Luhansk region</option>
+                      <option value="Lviv">Lviv region</option>
+                      <option value="Mykolaiv">Mykolaiv region</option>
+                      <option value="Odessa">Odessa region</option>
+                      <option value="Poltava">Poltava region</option>
+                      <option value="Rivne">Rivne region</option>
+                      <option value="Ternopil">Ternopil region</option>
+                      <option value="Vinnytsia">Vinnytsia region</option>
+                      <option value="Volyn">Volyn region</option>
+                      <option value="Zakarpattia">Zakarpattia region</option>
+                      <option value="Zaporizhia">Zaporizhia region</option>
+                      <option value="Zhytomyr">Zhytomyr region</option>
+                  </select><br><br>
+                  <label translate="no" for="phone">Telephone number:</label>
+                  <input type="tel" name="phone" id="phone" required placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                  <label translate="no" for="date">Date of Birth:</label>
+                  <input type="date" name="date" id="date"><br><br>
+                  <div class="radio_formating">
+                    <label translate="no" class="full-text">Technology stack:</label><br class="br"><br class="br">
+                    <input type="radio" id="MERN" name="stackTechnology">
+                    <label translate="no" for="MERN">MERN Stack</label>
+                    <input type="radio" id="MEAN" name="stackTechnology">
+                    <label translate="no" for="MEAN">MEAN Stack</label>
+                    <input type="radio" id="LAMP" name="stackTechnology">
+                    <label translate="no" for="LAMP">LAMP Stack</label><br class="br"><br class="br">
+                  </div>
+                  <label for="qa" class="full-text">Ask your questions (optional):</label><br>
+                  <textarea name="qa" id="qa" cols="30" rows="5"></textarea><br>
+                  <input translate="no" type="submit" name="btnReg" id="btnReg" value="Submit">
+                  <input translate="no" type="reset" name="btnReset" id="btnReset" value="Reset">
+              </form>
+          </section>
+        </div>
+      </div>
+    </div>
     
+    <div id="login-modal" class="modal-form">
+      <div class="modal-reg">
+        <span class="exit fa fa-times-circle"></span>
+        <div class="main-reg">
+          <section class="reg-modal-section">
+            <h2>Authorization</h2>
+              <form action="#" method="POST" class="reg-form login">
+                  <label translate="no" for="login">Login:</label>
+                  <input type="text" id="login" name="login"><br><br>
+                  <label translate="no" for="pass">Password:</label>
+                  <input type="password" id="pass" name="pass"><br><br>
+                  <input type="checkbox" id="checkLogin" name="checkLogin" value="Remember me for 30 days">
+                  <label for="checkLogin" class="full-text">Remember me for 30 days</label><br><br>
+                  <div class="center-btn">
+                    <input type="submit" name="btnLog" id="btnLog" value="Login">
+                  </div> 
+              </form>
+          </section>
+        </div>
+      </div>
+    </div>
+
     <div class="main">
        <section id="whatWeDo" class="what_we_do">
         <h2>What we do</h2>
@@ -138,5 +227,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
