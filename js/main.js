@@ -14,8 +14,9 @@ modalBtn.addEventListener("click", ()=>{
 });
 
 window.addEventListener("click", (event)=>{
-    if(event.target==regForm){
+    if(event.target==regForm || event.target==logForm){
         regForm.style.display="none";
+        logForm.style.display="none";
     }
 });
 
