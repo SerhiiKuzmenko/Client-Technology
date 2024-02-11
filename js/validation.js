@@ -22,6 +22,9 @@ const tipR = document.querySelector('.tip-r');
 const modalL = document.querySelectorAll('.modal-valid-item-l')[0];
 const modalR = document.querySelectorAll('.modal-valid-item-r')[0];
 
+const aboutCheckBoxBtn = document.querySelector("#chbox");
+const aboutText = document.querySelectorAll(".about-cone")[0];
+
 spanX2.addEventListener('click', () => {
   if (onlyR.style.display == 'none') {
     modalValid.style.display = 'none';
@@ -61,6 +64,7 @@ resetBtn.addEventListener('click', (event) => {
   if (answerText) {
     answerText.style.display = 'none';
   }
+  aboutText.style.display="none";
 });
 
 answerForm.addEventListener('submit', (event) => {
@@ -136,11 +140,6 @@ function classChecker() {
 }
 
 
-
-const aboutCheckBoxBtn = document.querySelector("#chbox");
-const aboutText = document.querySelectorAll(".about-cone")[0];
-
-console.log(aboutText);
 
 
 aboutCheckBoxBtn.addEventListener("change", (event)=>{
