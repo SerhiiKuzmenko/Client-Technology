@@ -4,6 +4,7 @@ const regForm = document.querySelector("#modal");
 const spanX = document.querySelectorAll(".exit")[0];
 const spanX1 = document.querySelectorAll(".exit")[1];
 
+
 const loginFormBtn = document.querySelector("#login-form");
 const logForm = document.querySelector("#login-modal");
 
