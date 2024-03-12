@@ -102,7 +102,10 @@ body {
 
 .fieldText{
   text-align: center;
-  margin-top: 20px;
+}
+
+.regexp-input-item{
+  margin-bottom: 10px;
 }
 
 .greenRegExp{
@@ -819,9 +822,7 @@ input[type='reset']:hover {
     align-items: center;
   }
 
-  .regexp-input-item{
-    margin-top: 10px;
-  }
+  
   .btn{
     margin-left: 10px;
   }
@@ -830,8 +831,12 @@ input[type='reset']:hover {
     padding-left: 15px;
   }
 
+
+  .regexp-input .regexp-input-item,
   .fieldText .regexp-input-item{
-    width: 200px;
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
   }
 }
 
