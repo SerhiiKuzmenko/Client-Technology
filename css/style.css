@@ -100,6 +100,51 @@ body {
     flex: 1 1 auto;
 } */
 
+.fieldText{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.greenRegExp{
+  background-color: green;
+}
+
+.regexp-input{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.regexp-input .regexp-input-item{
+  width: 200px;
+}
+
+.green-border{
+  border: 2px solid green;
+}
+
+.red-border{
+  border: 2px solid red;
+}
+
+#regexpField{
+  outline: none;
+}
+
+.btn{
+  width: auto;
+  height: 36px;
+  border: 3px solid lightskyblue;
+  background-color: lightblue;
+  color: gray;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #237cb5;
+  color: white;
+  transition: 0.9s;
+}
+
 .logo {
   display: flex;
   justify-content: space-between;
@@ -539,6 +584,10 @@ input[type='reset']:hover {
   ul {
     padding-inline-start: 10px;
   }
+
+  ul li > a[href='#whatWeDo'] {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 860px) {
@@ -546,7 +595,8 @@ input[type='reset']:hover {
     padding-inline-start: 10px;
   }
 
-  ul li > a[href='#whatWeDo'] {
+  ul li > a[href='#whatWeDo'],
+  ul li > a[href='#ourExpirience'] {
     display: none;
   }
 }
@@ -557,7 +607,8 @@ input[type='reset']:hover {
   }
 
   ul li > a[href='#whatWeDo'],
-  ul li > a[href='#ourExpirience'] {
+  ul li > a[href='#ourExpirience'],
+  ul li > a[href='#projects'] {
     display: none;
   }
 
@@ -759,6 +810,28 @@ input[type='reset']:hover {
   .what_we_do p,
   .our_expirience p {
     padding-left: 5px;
+  }
+
+
+  .regexp-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .regexp-input-item{
+    margin-top: 10px;
+  }
+  .btn{
+    margin-left: 10px;
+  }
+
+  .searched-text{
+    padding-left: 15px;
+  }
+
+  .fieldText .regexp-input-item{
+    width: 200px;
   }
 }
 

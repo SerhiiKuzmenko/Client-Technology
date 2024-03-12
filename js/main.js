@@ -1,3 +1,5 @@
+"use strict";
+
 
 const modalBtn = document.querySelector("#registration-form");
 const regForm = document.querySelector("#modal");
@@ -32,3 +34,4 @@ spanX1.addEventListener("click", ()=>{
 loginFormBtn.addEventListener("click", ()=>{
     logForm.style.display="block";
 });
+

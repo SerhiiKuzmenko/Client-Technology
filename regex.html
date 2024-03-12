@@ -49,13 +49,60 @@
                   translate="no"
                   id="login-form"
                   class="fa fa-user-circle user-management"
-                  style="margin-right: 5px"
+                  style="margin-right: 7px"
                 ></a>
               </li>
             </ul>
           </div>
         </div>
       </header>
+
+      <section>
+        <div class="main">
+          <div class="regexp-input">
+            <input
+              type="text"
+              id="inputRegexp"
+              class="regexp-input-item"
+              placeholder="Pattern"
+            />
+            <input
+              type="text"
+              id="replaceText"
+              class="regexp-input-item"
+              placeholder="Replacement text"
+            />
+            <input
+              type="button"
+              id="regexpBtn"
+              class="regexp-input-item btn"
+              value="Change"
+            />
+          </div>
+          <div class="fieldText">
+            <input type="text" id="regexpField" style="text-align: center;" class="regexp-input-item" placeholder="Test Field"/>
+          </div>
+          <div class="regexp-found-text">
+            <p class="searched-text">
+              У сучасному світі програмісти та системні адміністратори відіграють надзвичайно важливу роль у розвитку технологій. Вони - справжні магі світу Інтернету, які знають секрети IP-адреси формату 255.128.128.4, які дозволяють з'єднувати всі комп'ютери в єдину мережу. Завдяки їхнім зусиллям, веб-сервери та бази даних працюють належним чином, забезпечуючи безперервну роботу інтернет-сервісів.
+
+              Дата у форматі 28/02/1999 є не лише порядковим номером в календарі, але й ключем до планування роботи та відстеження подій. Саме тому програмісти та системні адміністратори завжди звертають увагу на ці числа, розподіляючи ресурси та вирішуючи проблеми, щоб забезпечити найкращу продуктивність систем.
+
+              E-mail в домені ukr.net стає не тільки засобом комунікації, але і показником національної приналежності. Програмісти та системні адміністратори часто спілкуються через цей канал, обмінюючись інформацією, вирішуючи завдання та координуючи свої зусилля для досягнення спільної мети.
+
+              У своїй роботі програмісти та системні адміністратори зустрічають IP-адреси формату 255.100.094.8, розглядають дати у форматі 13/10/2009, використовують E-mail в домені ukr.net. Ці дані стають не лише часткою технічного стеку, але й чинниками, які допомагають забезпечити надійність та ефективність інформаційних систем.
+
+              У сучасному світі програмісти та системні адміністратори відіграють надзвичайно важливу роль у розвитку технологій. Вони - справжні магі світу Інтернету, які знають секрети IP-адреси формату 255.128.128.4, які дозволяють з'єднувати всі комп'ютери в єдину мережу. Завдяки їхнім зусиллям, веб-сервери та бази даних працюють належним чином, забезпечуючи безперервну роботу інтернет-сервісів.
+
+              Дата у форматі 28/02/1999 є не лише порядковим номером в календарі, але й ключем до планування роботи та відстеження подій. Саме тому програмісти та системні адміністратори завжди звертають увагу на ці числа, розподіляючи ресурси та вирішуючи проблеми, щоб забезпечити найкращу продуктивність систем.
+
+              E-mail в домені ukr.net стає не тільки засобом комунікації, але і показником національної приналежності. Програмісти та системні адміністратори часто спілкуються через цей канал, обмінюючись інформацією, вирішуючи завдання та координуючи свої зусилля для досягнення спільної мети.
+
+              У своїй роботі програмісти та системні адміністратори зустрічають IP-адреси формату 255.100.094.8, розглядають дати у форматі 13/10/2009, використовують E-mail в домені ukr.net. Ці дані стають не лише часткою технічного стеку, але й чинниками, які допомагають забезпечити надійність та ефективність інформаційних систем.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <div id="modal" class="modal-form">
         <div class="modal-reg">
@@ -78,17 +125,17 @@
                   name="secondName"
                   required
                 /><br /><br />
-                <label translate="no" for="login1">Login:</label>
+                <label translate="no" for="login">Login:</label>
                 <input
                   type="text"
-                  id="login1"
+                  id="login"
                   name="login"
                   required
                 /><br /><br />
-                <label translate="no" for="pass1">Password:</label>
+                <label translate="no" for="pass">Password:</label>
                 <input
                   type="password"
-                  id="pass1"
+                  id="pass"
                   name="pass"
                   required
                 /><br /><br />
@@ -176,10 +223,10 @@
             <section class="reg-modal-section">
               <h2>Authorization</h2>
               <form action="#" method="POST" class="reg-form login">
-                <label translate="no" for="login">Login:</label>
-                <input type="text" id="login" name="login" /><br /><br />
-                <label translate="no" for="pass">Password:</label>
-                <input type="password" id="pass" name="pass" /><br /><br />
+                <label translate="no" for="loginL">Login:</label>
+                <input type="text" id="loginL" name="login" /><br /><br />
+                <label translate="no" for="passL">Password:</label>
+                <input type="password" id="passL" name="pass" /><br /><br />
                 <input
                   type="checkbox"
                   id="checkLogin"
@@ -202,57 +249,6 @@
           </div>
         </div>
       </div>
-
-      <div id="modal-valid" class="modal-validation">
-        <div class="modal-valid-item-l">
-          <span class="exit fa fa-times-circle"></span>
-          <p class="tip-l">1</p>
-        </div>
-
-        <div class="modal-valid-item-r">
-          <span class="exit fa fa-times-circle"></span>
-          <p class="tip-r">2</p>
-        </div>
-      </div>
-
-      <div class="main valid-main">
-        <section class="reg-modal-section valid-section">
-          <h2>Validation</h2>
-          <form action="#" class="reg-form valid-form">
-            <input type="checkbox" id="chbox" />
-            <label class="full-text" for="chbox"
-              >About the surface area of a cone</label
-            >
-            <p class="about-cone">
-              The total surface area of a cone is the sum of the areas of the
-              lateral surface and the base. To calculate the area of the
-              complete surface of the cone Sкoн we receive: Scone = Sside +
-              Sbasis, Scone = πRl + πR2 = πR(l + R).
-            </p>
-            <br /><br />
-            <label for="linp">Enetr L:</label>
-            <input type="text" name="linp" id="linp" /><br /><br />
-            <label for="rinp">Enetr R:</label>
-            <input type="text" name="rinp" id="rinp" /><br /><br />
-            <input
-              translate="no"
-              type="submit"
-              name="btnValid"
-              id="btnValid"
-              value="To Count"
-            />
-            <input
-              translate="no"
-              type="reset"
-              name="btnResetValid"
-              id="btnResetValid"
-              value="Reset"
-            />
-          </form>
-          <div class="answer"></div>
-        </section>
-      </div>
-
       <footer>
         <div class="links">
           <ul>
@@ -270,12 +266,14 @@
             </li>
           </ul>
         </div>
-        <div class="copy">
+        <div
+          class="copy"
+        >
           <p>&copy; 2023 SoftComp. All rights reserved.</p>
         </div>
       </footer>
     </div>
     <script src="js/main.js"></script>
-    <script src="js/validation.js"></script>
+    <script src="js/regex.js"></script>
   </body>
 </html>
