@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -39,20 +41,20 @@
     </header>
 
     <div id="modal" class="modal-form">
-      <div class="modal-reg">
+      <div class="modal-reg" id="form-registration">
         <span class="exit fa fa-times-circle"></span>
         <div class="main-reg">
           <section class="reg-modal-section">
             <h2 translate="no">Registration</h2>
-              <form action="#" method="POST" class="reg-form">
-                  <label translate="no" for="firstName">First Name:</label>
-                  <input type="text" id="firstName" name="firstName" required><br><br>
-                  <label translate="no" for="secondName">Second Name:</label>
-                  <input type="text" id="secondName" name="secondName" required><br><br>
+              <form action="#" method="POST" class="reg-form" id="form-for-registration">
                   <label translate="no" for="login">Login:</label>
                   <input type="text" id="login" name="login" required><br><br>
                   <label translate="no" for="pass">Password:</label>
                   <input type="password" id="pass" name="pass" required><br><br>
+                  <label translate="no" for="repass">Repeat password:</label>
+                  <input type="password" id="repass" name="repass" required><br><br>
+                  <label translate="no" for="mail">Email:</label>
+                  <input type="email" id="mail" name="mail" required><br><br>
                   <label translate="no" for="regions">Region</label>
                   <select name="regions" id="regions">
                       <option value="" selected disabled>Select a region</option>
@@ -94,8 +96,8 @@
                     <input type="radio" id="LAMP" name="stackTechnology">
                     <label translate="no" for="LAMP">LAMP Stack</label><br class="br"><br class="br">
                   </div>
-                  <label for="qa" class="full-text">Ask your questions (optional):</label><br>
-                  <textarea name="qa" id="qa" cols="30" rows="5"></textarea><br>
+                  <!-- <label for="qa" class="full-text">Ask your questions (optional):</label><br> -->
+                  <!-- <textarea name="qa" id="qa" cols="30" rows="5"></textarea><br> -->
                   <input translate="no" type="submit" name="btnReg" id="btnReg" value="Submit">
                   <input translate="no" type="reset" name="btnReset" id="btnReset" value="Reset">
               </form>
@@ -112,7 +114,7 @@
             <h2>Authorization</h2>
               <form action="#" method="POST" class="reg-form login">
                   <label translate="no" for="loginL">Login:</label>
-                  <input type="text" id="loginL" name="login"><br><br>
+                  <input type="text" id="loginL" name="login" required><br><br>
                   <label translate="no" for="passL">Password:</label>
                   <input type="password" id="passL" name="pass"><br><br>
                   <input type="checkbox" id="checkLogin" name="checkLogin" value="Remember me for 30 days">
@@ -203,11 +205,15 @@
        </section>
        <section id="contactUs">
         <h2>Contact Us</h2>
-          <form class="main-form" action="#">
-            <input class="form-content" type="tel" name="telephone" placeholder="Telephone" required>
+        <div class="promis" id="promis-img">
+          <img src="img/ac.png" alt="accepted">
+        </div>
+          <form class="main-form" action="#" id="qa-form">
+            <input class="form-content" type="text" name="name" placeholder="Name" required>
             <input class="form-content" type="email" name="mail" placeholder="Email" required>
+            <input class="form-content" type="text" name="topic" placeholder="Topic" required>
             <textarea class="form-content" name="QA" id="QA" cols="30" rows="10" placeholder="Questions"></textarea>
-            <input translate="no" class="form-content" type="submit" value="Submit">
+            <input translate="no" id="qabtn" class="form-content" type="submit" value="Submit">
           </form>
        </section>
     </div>
@@ -231,5 +237,7 @@
     </footer>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/animation.jquery.js"></script>
+  <script src="js/validation.jquery.js"></script>
 </body>
 </html>

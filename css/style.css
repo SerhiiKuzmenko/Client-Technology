@@ -68,6 +68,13 @@ body {
   color: #000;
 }
 
+label.error {
+  color: red;
+  font-size: 14px;
+  width: auto !important;
+  display: flex !important;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -100,40 +107,40 @@ body {
     flex: 1 1 auto;
 } */
 
-.fieldText{
+.fieldText {
   text-align: center;
 }
 
-.regexp-input-item{
+.regexp-input-item {
   margin-bottom: 10px;
 }
 
-.greenRegExp{
+.greenRegExp {
   background-color: green;
 }
 
-.regexp-input{
+.regexp-input {
   margin-top: 20px;
   text-align: center;
 }
 
-.regexp-input .regexp-input-item{
+.regexp-input .regexp-input-item {
   width: 200px;
 }
 
-.green-border{
+.green-border {
   border: 2px solid green;
 }
 
-.red-border{
+.red-border {
   border: 2px solid red;
 }
 
-#regexpField{
+#regexpField {
   outline: none;
 }
 
-.btn{
+.btn {
   width: auto;
   height: 36px;
   border: 3px solid lightskyblue;
@@ -142,7 +149,7 @@ body {
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #237cb5;
   color: white;
   transition: 0.9s;
@@ -255,15 +262,29 @@ ul {
   max-width: 400px;
   width: 90%;
   align-items: center;
+  position: relative;
 }
 /* змінити */
-.main-form .form-content {
-  margin-bottom: 10px;
+.main-form .form-content:not(:first-child) {
+  margin-top: 10px;
   height: 35px;
   border-radius: 2px;
   padding-left: 10px;
   width: 100%;
   background-color: white;
+}
+
+.main-form .form-content:first-child {
+  height: 35px;
+  border-radius: 2px;
+  padding-left: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.promis {
+  text-align: center;
+  display: none;
 }
 
 .main-form .form-content[type='submit'] {
@@ -337,6 +358,7 @@ input:-webkit-autofill {
 }
 
 input[type='text'],
+input[type='email'],
 input[type='password'],
 input[type='tel'],
 input[type='date'] {
@@ -527,11 +549,11 @@ input[type='reset']:hover {
   transition: 0.4s ease;
 }
 
-.about-cone{
+.about-cone {
   display: none;
   max-width: 300px;
   text-align: left;
-  margin-left: 30px; 
+  margin-left: 30px;
   padding: 0 0 0 0;
 }
 
@@ -548,11 +570,11 @@ input[type='reset']:hover {
     left: 70%;
   }
 
-  .modal-valid-item-l p{
+  .modal-valid-item-l p {
     font-size: 18px;
   }
 
-  .modal-valid-item-r p{
+  .modal-valid-item-r p {
     font-size: 18px;
   }
 }
@@ -574,11 +596,11 @@ input[type='reset']:hover {
     padding: 5px;
   }
 
-  .modal-valid-item-l p{
+  .modal-valid-item-l p {
     font-size: 18px;
   }
 
-  .modal-valid-item-r p{
+  .modal-valid-item-r p {
     font-size: 18px;
   }
 }
@@ -624,7 +646,7 @@ input[type='reset']:hover {
   }
 
   .menu ul li {
-    margin-left: 5px;
+    margin-left: 0;
   }
 
   .team {
@@ -648,6 +670,27 @@ input[type='reset']:hover {
 
   .menu a.user-management {
     margin-left: -5px;
+  }
+
+  input[type='radio'] + label {
+    width: 180px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .radio_formating {
+    text-align: center;
+  }
+
+  input[type='radio'] + label:before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #237cb5;
+    border-radius: 50%;
+    background-color: #c0e1f2;
   }
 }
 
@@ -674,11 +717,11 @@ input[type='reset']:hover {
     padding: 5px;
   }
 
-  .modal-valid-item-l p{
+  .modal-valid-item-l p {
     font-size: 18px;
   }
 
-  .modal-valid-item-r p{
+  .modal-valid-item-r p {
     font-size: 18px;
   }
 
@@ -776,6 +819,7 @@ input[type='reset']:hover {
   input[type='password'],
   input[type='tel'],
   input[type='date'],
+  input[type='email'],
   select {
     margin-left: 10px;
   }
@@ -806,34 +850,31 @@ input[type='reset']:hover {
     display: none;
   }
 
-  textarea[name='qa'] {
+  /* textarea[name='qa'] {
     width: 100%;
-  }
+  } */
 
   .what_we_do p,
   .our_expirience p {
     padding-left: 5px;
   }
 
-
-  .regexp-input{
+  .regexp-input {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  
-  .btn{
+  .btn {
     margin-left: 10px;
   }
 
-  .searched-text{
+  .searched-text {
     padding-left: 15px;
   }
 
-
   .regexp-input .regexp-input-item,
-  .fieldText .regexp-input-item{
+  .fieldText .regexp-input-item {
     height: 40px;
     width: 300px;
     font-size: 20px;
