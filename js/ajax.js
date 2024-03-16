@@ -39,7 +39,7 @@ $(document).ready(() => {
       return response.json();
     })
     .then((data) => {
-      localStorage.setItem('likes', JSON.stringify(data));
+      localStorage.setItem('postsData', JSON.stringify(data));
       let postList = '';
       for (let i = 0; i < data.length; ++i) {
         postList += `<div class="post">
