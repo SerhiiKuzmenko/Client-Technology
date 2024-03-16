@@ -52,13 +52,23 @@
                   translate="no"
                   id="login-form"
                   class="fa fa-user-circle user-management"
-                  style="margin-right: 5px"
+                  style="margin-right: 7px"
                 ></a>
               </li>
             </ul>
           </div>
         </div>
       </header>
+
+      <section class="posts-sec">
+        <div class="posts" id="posts">
+          <div class="post">
+            <h3>Post 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, vero. Facere eligendi laudantium pariatur error at cumque nobis ipsum deleniti odit culpa quas vitae, vel impedit expedita eos excepturi incidunt.</p>
+            <i class="fa fa-heart heart-pos"><span class="score">1</span></i>
+          </div>
+        </div>
+      </section>
 
       <div id="modal" class="modal-form">
         <div class="modal-reg" id="form-registration">
@@ -133,10 +143,10 @@
             <section class="reg-modal-section">
               <h2>Authorization</h2>
               <form action="#" method="POST" class="reg-form login">
-                <label translate="no" for="login">Login:</label>
-                <input type="text" id="login" name="login" /><br /><br />
-                <label translate="no" for="pass">Password:</label>
-                <input type="password" id="pass" name="pass" /><br /><br />
+                <label translate="no" for="loginL">Login:</label>
+                <input type="text" id="loginL" name="login" /><br /><br />
+                <label translate="no" for="passL">Password:</label>
+                <input type="password" id="passL" name="pass" /><br /><br />
                 <input
                   type="checkbox"
                   id="checkLogin"
@@ -159,57 +169,6 @@
           </div>
         </div>
       </div>
-
-      <div id="modal-valid" class="modal-validation">
-        <div class="modal-valid-item-l">
-          <span class="exit fa fa-times-circle"></span>
-          <p class="tip-l">1</p>
-        </div>
-
-        <div class="modal-valid-item-r">
-          <span class="exit fa fa-times-circle"></span>
-          <p class="tip-r">2</p>
-        </div>
-      </div>
-
-      <div class="main valid-main">
-        <section class="reg-modal-section valid-section">
-          <h2>Validation</h2>
-          <form action="#" class="reg-form valid-form">
-            <input type="checkbox" id="chbox" />
-            <label class="full-text" for="chbox"
-              >About the surface area of a cone</label
-            >
-            <p class="about-cone">
-              The total surface area of a cone is the sum of the areas of the
-              lateral surface and the base. To calculate the area of the
-              complete surface of the cone Sкoн we receive: Scone = Sside +
-              Sbasis, Scone = πRl + πR2 = πR(l + R).
-            </p>
-            <br /><br />
-            <label for="linp">Enetr L:</label>
-            <input type="text" name="linp" id="linp" /><br /><br />
-            <label for="rinp">Enetr R:</label>
-            <input type="text" name="rinp" id="rinp" /><br /><br />
-            <input
-              translate="no"
-              type="submit"
-              name="btnValid"
-              id="btnValid"
-              value="To Count"
-            />
-            <input
-              translate="no"
-              type="reset"
-              name="btnResetValid"
-              id="btnResetValid"
-              value="Reset"
-            />
-          </form>
-          <div class="answer"></div>
-        </section>
-      </div>
-
       <footer>
         <div class="links">
           <ul>
@@ -227,14 +186,15 @@
             </li>
           </ul>
         </div>
-        <div class="copy">
+        <div
+          class="copy"
+        >
           <p>&copy; 2023 SoftComp. All rights reserved.</p>
         </div>
       </footer>
     </div>
-    <script src="js/main.js"></script>
-    <script src="js/validation.js"></script>
     <script src="js/animation.jquery.js"></script>
     <script src="js/validation.jquery.js"></script>
+    <script src="js/ajax.js"></script>
   </body>
 </html>

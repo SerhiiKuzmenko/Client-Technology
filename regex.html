@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -39,6 +39,7 @@
               <li><a translate="no" href="index.html">Home</a></li>
               <li><a translate="no" href="validation.html">Validation</a></li>
               <li><a translate="no" href="regex.html">Regexp</a></li>
+              <li><a translate="no" href="posts.html">Posts</a></li>
               <li>
                 <a
                   translate="no"
@@ -107,112 +108,66 @@
       </section>
 
       <div id="modal" class="modal-form">
-        <div class="modal-reg">
+        <div class="modal-reg" id="form-registration">
           <span class="exit fa fa-times-circle"></span>
           <div class="main-reg">
             <section class="reg-modal-section">
               <h2 translate="no">Registration</h2>
-              <form action="#" method="POST" class="reg-form">
-                <label translate="no" for="firstName">First Name:</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  required
-                /><br /><br />
-                <label translate="no" for="secondName">Second Name:</label>
-                <input
-                  type="text"
-                  id="secondName"
-                  name="secondName"
-                  required
-                /><br /><br />
-                <label translate="no" for="login">Login:</label>
-                <input
-                  type="text"
-                  id="login"
-                  name="login"
-                  required
-                /><br /><br />
-                <label translate="no" for="pass">Password:</label>
-                <input
-                  type="password"
-                  id="pass"
-                  name="pass"
-                  required
-                /><br /><br />
-                <label translate="no" for="regions">Region</label>
-                <select name="regions" id="regions">
-                  <option value="" selected disabled>Select a region</option>
-                  <option value="Sumy">Sumy region</option>
-                  <option value="Cherkasy">Cherkasy region</option>
-                  <option value="Chernihiv">Chernihiv region</option>
-                  <option value="Chernivtsi">Chernivtsi region</option>
-                  <option value="Dnipropetrovsk">Dnipropetrovsk region</option>
-                  <option value="Donetsk">Donetsk region</option>
-                  <option value="Ivano-Frankivsk">
-                    Ivano-Frankivsk region
-                  </option>
-                  <option value="Kharkiv">Kharkiv region</option>
-                  <option value="Kherson">Kherson region</option>
-                  <option value="Khmelnytskyi">Khmelnytskyi region</option>
-                  <option value="Kiev">Kiev region</option>
-                  <option value="Kirovohrad">Kirovohrad region</option>
-                  <option value="Luhansk">Luhansk region</option>
-                  <option value="Lviv">Lviv region</option>
-                  <option value="Mykolaiv">Mykolaiv region</option>
-                  <option value="Odessa">Odessa region</option>
-                  <option value="Poltava">Poltava region</option>
-                  <option value="Rivne">Rivne region</option>
-                  <option value="Ternopil">Ternopil region</option>
-                  <option value="Vinnytsia">Vinnytsia region</option>
-                  <option value="Volyn">Volyn region</option>
-                  <option value="Zakarpattia">Zakarpattia region</option>
-                  <option value="Zaporizhia">Zaporizhia region</option>
-                  <option value="Zhytomyr">Zhytomyr region</option></select
-                ><br /><br />
-                <label translate="no" for="phone">Telephone number:</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  required
-                  placeholder="XXX-XXX-XXXX"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                /><br /><br />
-                <label translate="no" for="date">Date of Birth:</label>
-                <input type="date" name="date" id="date" /><br /><br />
-                <div class="radio_formating">
-                  <label translate="no" class="full-text"
-                    >Technology stack:</label
-                  ><br class="br" /><br class="br" />
-                  <input type="radio" id="MERN" name="stackTechnology" />
-                  <label translate="no" for="MERN">MERN Stack</label>
-                  <input type="radio" id="MEAN" name="stackTechnology" />
-                  <label translate="no" for="MEAN">MEAN Stack</label>
-                  <input type="radio" id="LAMP" name="stackTechnology" />
-                  <label translate="no" for="LAMP">LAMP Stack</label
-                  ><br class="br" /><br class="br" />
-                </div>
-                <label for="qa" class="full-text"
-                  >Ask your questions (optional):</label
-                ><br />
-                <textarea name="qa" id="qa" cols="30" rows="5"></textarea><br />
-                <input
-                  translate="no"
-                  type="submit"
-                  name="btnReg"
-                  id="btnReg"
-                  value="Submit"
-                />
-                <input
-                  translate="no"
-                  type="reset"
-                  name="btnReset"
-                  id="btnReset"
-                  value="Reset"
-                />
-              </form>
+                <form action="#" method="POST" class="reg-form" id="form-for-registration">
+                    <label translate="no" for="login">Login:</label>
+                    <input type="text" id="login" name="login" required><br><br>
+                    <label translate="no" for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" required><br><br>
+                    <label translate="no" for="repass">Repeat password:</label>
+                    <input type="password" id="repass" name="repass" required><br><br>
+                    <label translate="no" for="mail">Email:</label>
+                    <input type="email" id="mail" name="mail" required><br><br>
+                    <label translate="no" for="regions">Region</label>
+                    <select name="regions" id="regions">
+                        <option value="" selected disabled>Select a region</option>
+                        <option value="Sumy">Sumy region</option>
+                        <option value="Cherkasy">Cherkasy region</option>
+                        <option value="Chernihiv">Chernihiv region</option>
+                        <option value="Chernivtsi">Chernivtsi region</option>
+                        <option value="Dnipropetrovsk">Dnipropetrovsk region</option>
+                        <option value="Donetsk">Donetsk region</option>
+                        <option value="Ivano-Frankivsk">Ivano-Frankivsk region</option>
+                        <option value="Kharkiv">Kharkiv region</option>
+                        <option value="Kherson">Kherson region</option>
+                        <option value="Khmelnytskyi">Khmelnytskyi region</option>
+                        <option value="Kiev">Kiev region</option>
+                        <option value="Kirovohrad">Kirovohrad region</option>
+                        <option value="Luhansk">Luhansk region</option>
+                        <option value="Lviv">Lviv region</option>
+                        <option value="Mykolaiv">Mykolaiv region</option>
+                        <option value="Odessa">Odessa region</option>
+                        <option value="Poltava">Poltava region</option>
+                        <option value="Rivne">Rivne region</option>
+                        <option value="Ternopil">Ternopil region</option>
+                        <option value="Vinnytsia">Vinnytsia region</option>
+                        <option value="Volyn">Volyn region</option>
+                        <option value="Zakarpattia">Zakarpattia region</option>
+                        <option value="Zaporizhia">Zaporizhia region</option>
+                        <option value="Zhytomyr">Zhytomyr region</option>
+                    </select><br><br>
+                    <label translate="no" for="phone">Telephone number:</label>
+                    <input type="tel" name="phone" id="phone" required placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                    <label translate="no" for="date">Date of Birth:</label>
+                    <input type="date" name="date" id="date"><br><br>
+                    <div class="radio_formating">
+                      <label translate="no" class="full-text">Technology stack:</label><br class="br"><br class="br">
+                      <input type="radio" id="MERN" name="stackTechnology">
+                      <label translate="no" for="MERN">MERN Stack</label>
+                      <input type="radio" id="MEAN" name="stackTechnology">
+                      <label translate="no" for="MEAN">MEAN Stack</label>
+                      <input type="radio" id="LAMP" name="stackTechnology">
+                      <label translate="no" for="LAMP">LAMP Stack</label><br class="br"><br class="br">
+                    </div>
+                    <!-- <label for="qa" class="full-text">Ask your questions (optional):</label><br> -->
+                    <!-- <textarea name="qa" id="qa" cols="30" rows="5"></textarea><br> -->
+                    <input translate="no" type="submit" name="btnReg" id="btnReg" value="Submit">
+                    <input translate="no" type="reset" name="btnReset" id="btnReset" value="Reset">
+                </form>
             </section>
           </div>
         </div>
@@ -278,5 +233,6 @@
     <script src="js/main.js"></script>
     <script src="js/regex.js"></script>
     <script src="js/animation.jquery.js"></script>
+    <script src="js/validation.jquery.js"></script>
   </body>
 </html>

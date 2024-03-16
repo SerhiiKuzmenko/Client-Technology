@@ -1,0 +1,27 @@
+[
+    {
+        "title": "How Do Neural Networks Learn? A Mathematical Formula Explains How They Detect Relevant Patterns",
+        "body": "Neural networks have been powering breakthroughs in artificial intelligence, including the large language models that are now being used in a wide range of applications, from finance, to human.",
+        "likes": 110
+    },
+    {
+        "title": "New AI Technology Enables 3D Capture and Editing of Real-Life Objects",
+        "body": "Imagine performing a sweep around an object with your smartphone and getting a realistic, fully editable 3D model that you can view from any angle -- this is fast becoming reality, thanks to advances in AI. Researchers have unveiled new AI.",
+        "likes": 5003
+    },
+    {
+        "title": "Mathematicians Use AI to Identify Emerging COVID-19 Variants",
+        "body": "Scientists have developed an AI framework that can identify and track new and concerning COVID-19 variants and could help with other infections.",
+        "likes": 406
+    },
+    {
+        "title": "Accessibility Toolkit for Game Engine Unity",
+        "body": "New work makes it easier for game developers to implement game aids for people with disabilities. The toolkit focuses on players with visua.",
+        "likes": 7
+    },
+    {
+        "title": "Shortcut to Success: Toward Fast and Robust Quantum Control Through Accelerating Adiabatic Passage",
+        "body": "Researchers achieved the acceleration of adiabatic evolution of a single spin qubit in gate-defined quantum dots. After the pulse optimization to suppress quasistatic noises, the spin flip fidelity.",
+        "likes": 8079
+    }
+]
