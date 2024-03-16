@@ -31,7 +31,7 @@ function toggleLike(id) {
 }
 
 $(document).ready(() => {
-  fetch('/json/posts.json')
+  fetch('json/posts.json')
     .then((response) => {
       if (!response.ok) {
         throw new Error(response.status);
